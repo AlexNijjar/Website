@@ -76,6 +76,9 @@
                     <li><b>contact@alexnijjar.tech</b></li>
                     <li><b>AlexNijjar#5656</b></li>
                 </ul>
+                <a href="https://forms.gle/RXpuh4fKGKuv912k9" target="_blank" rel="noopener" title="Commisions">
+                <p>I also take commissions</p>
+                </a>
             </div>
         </div>
     </div>
