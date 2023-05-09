@@ -49,9 +49,7 @@
                 <h1>Hi, I'm Alex</h1>
                 <p class="intro">I'm a software engineer that does things.</p>
                 <p>
-                    Since starting my programming journey in 2022, I've been able to develop a strong foundation in
-                    Java and am currently expanding my skillset with Vue.js, C#, and Python. I'm excited to continue
-                    learning and growing as a programmer.
+                    I started with java and am currently learning other languages and stuff.
                 </p>
                 <p>Here are some of my projects:</p>
                 <div class="icon-container">
@@ -76,9 +74,6 @@
                     <li><b>contact@alexnijjar.tech</b></li>
                     <li><b>AlexNijjar#5656</b></li>
                 </ul>
-                <a href="https://forms.gle/RXpuh4fKGKuv912k9" target="_blank" rel="noopener" title="Commisions">
-                <p>I also take commissions</p>
-                </a>
             </div>
         </div>
     </div>
@@ -98,11 +93,13 @@ import {Github, Linkedin, Twitter, Youtube, Twitch, Package, Flame} from 'lucide
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 .box {
     background-color: seashell;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     width: 70%;
@@ -112,17 +109,16 @@ import {Github, Linkedin, Twitter, Youtube, Twitch, Package, Flame} from 'lucide
     align-items: center;
     min-width: 350px;
     min-height: 200px;
+    max-width: 800px;
 }
 
 .socials {
-    padding: 10px;
     display: flex;
     flex-wrap: nowrap;
 
 }
 
 .description {
-    padding: 20px;
     font-family: 'Fira Code', monospace;
     font-size: 16px;
     line-height: 1.5;
