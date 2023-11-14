@@ -18,7 +18,7 @@ body, html {
 }
 
 .container {
-    background-color: rgb(60, 60, 70, 0.6);
+    background-color: rgba(60, 60, 70, 0.6);
     padding: 20px;
     border-radius: 30px;
     width: 40vw;
@@ -30,6 +30,15 @@ body, html {
 
     min-width: 330px;
     min-height: 330px;
+}
+
+@media screen and (max-height: 500px) {
+    .container {
+        min-height: 60vh;
+        top: 5vh;
+        width: 60vw;
+        transform: translate(-50%, 0%);
+    }
 }
 
 .about {
