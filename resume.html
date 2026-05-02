@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alex Nijjar - Resume</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="resume-grid">
+			<h1>Alex Nijjar</h1>
+			<div class="main-col">
+				<h2>Experience</h2>
+
+				<h3>WOMBO, Los Angeles, California (On-Site) - Backend Software Engineer</h3>
+				<p>August 2024 - Present</p>
+				<ul>
+					<li>Developed <a href="https://w.ai">w.ai</a> - a distributed AI supercomputer network where consumers share their idle compute to power AI models.
+						<ul>
+							<li>Built a cross-platform compute rental platform allowing users to rent consumer GPUs through ephemeral SSH/Jupyter Notebooks in a secure sandboxed environment with full GPU-passthrough utilizing Podman + Landlock on Linux, WSL2 + Podman on Windows, and sandbox-exec on macOS for NVIDIA, AMD, Intel, and Apple Silicon devices. Set up regional VPS routing across US/EU/JP/SG for low latency.</li>
+							<li>Migrated w.ai's custom in-memory task queue system to a persistent BullMQ + Dragonfly queue with demand-based load balancing across worker hardware, substantially increasing task throughput and reliability across nodes.</li>
+						</ul>
+					</li>
+					<li>Developed the backend for <a href="https://petbo.ai">petbo.ai</a> from scratch built on TypeScript, Bun.js, ElysiaJS, Postgres + Drizzle ORM, Dragonfly, BullMQ, Firebase, and OpenTelemetry.
+						<ul>
+							<li>Designed a custom hot-reloadable template system integrating with Vertex AI, OpenAI Sora, and FAL AI with history and revision support allowing product team to easily create and deploy new templates over the air.</li>
+						</ul>
+					</li>
+					<li>Significantly optimized monthly operating expenses by migrating most of WOMBO's servers from AWS/Azure cloud services to Hetzner bare metal VPSs.</li>
+					<li>Managed all of WOMBO's infra and CI/CD pipelines through auto-scaling ephemeral self-hosted GitHub action runners with Kubernetes Actions Runner Controller (ARC).
+						<ul>
+							<li>Set up custom blue-green Docker Compose deployments with automatic rollback on failure, ensuring zero downtime during releases.</li>
+							<li>Set up automated PR unit testing, linter/formatting checks, and full end-to-end testing coverage across a heterogeneous fleet of devices testing Linux, Windows, and macOS through every GPU vendor and backend combination including NVIDIA CUDA, NVIDIA Vulkan, AMD ROCm, AMD Vulkan, Intel Vulkan, and Apple Metal.</li>
+						</ul>
+					</li>
+					<li>Managed WOMBO's former Bittensor SN39 EdgeMaxxing Subnet, where miners submitted optimized SDXL and Flux Schnell pipelines for consumer edge devices like the NVIDIA RTX 4090. Set up a secure Docker-based validator environment where submissions are evaluated for speed, VRAM usage, and cosine similarity against the baseline model.
+						<ul>
+							<li>Wrote an anti-cheat cronjob that analyzed daily submissions with an LLM to detect copied/malicious code, ensuring fairness in the competition.</li>
+						</ul>
+					</li>
+				</ul>
+
+				<h3>Terrarium, New York (Remote) - Freelance Developer</h3>
+				<p>October 2022 - Present</p>
+				<ul>
+					<li>Collaborated with a team of engineers and artists to create Minecraft game modifications (mods) using Java and Kotlin, with over 400,000,000 total downloads across CurseForge and Modrinth. Creator of multiple viral mods including Ad Astra, Chipped, Handcrafted, Enderman Overhaul, Golem Overhaul, and the Project Odyssey Suite.</li>
+					<li>Worked with YouTubers and organizations to commission custom-tailored mods.</li>
+					<li>Developed addons for Microsoft's Bedrock Marketplace.</li>
+				</ul>
+			</div>
+			<aside class="side-col">
+				<p>Toronto, ON, Canada</p>
+				<p><a href="mailto:alexander@wombo.ai">alexander@wombo.ai</a></p>
+				<p>Portfolio: <a href="https://alexnijjar.tech">alexnijjar.tech</a></p>
+				<p>LinkedIn: <a href="https://linkedin.com/in/alexnijjar">linkedin.com/in/alexnijjar</a></p>
+				<p>GitHub: <a href="https://github.com/alexnijjar">github.com/alexnijjar</a></p>
+
+				<h2>Skills</h2>
+				<h3>Programming Languages</h3>
+				<p>TypeScript, JavaScript, Python, Java, Kotlin, Nix</p>
+				<h3>Technologies</h3>
+				<p>Linux servers (Ubuntu, Debian, Alpine, NixOS), Bun.js/Node.js, ElysiaJS, BullMQ, Postgres, Drizzle ORM, Redis/Dragonfly, ClickHouse, Git, Firebase, OpenTelemetry, Protobuf</p>
+				<h3>Infra &amp; Ops</h3>
+				<p>AWS, Microsoft Azure, GCP (Vertex AI), Hetzner, Contabo, S3/R2, Docker/Podman, Kubernetes (GitHub ARC), GitHub Actions/self-hosted runners, Prometheus, Grafana</p>
+			</aside>
+		</div>
+	</body>
+</html>

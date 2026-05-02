@@ -2,8 +2,50 @@
 body {
     background-color: #1e1e2e;
     color: #cdd6f4;
+    font-family: "JetBrains Mono", monospace;
 }
 
 a {
     color: #89b4fa;
+}
+
+h1 {
+    color: #cba6f7;
+}
+
+h2 {
+    color: #89b4fa;
+}
+
+h3 {
+    color: #94e2d5;
+}
+
+li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.resume-grid > h1 {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+    .resume-grid > h1 {
+        order: -2;
+    }
+    .side-col {
+        order: -1;
+    }
 }
